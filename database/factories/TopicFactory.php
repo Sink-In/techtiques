@@ -7,6 +7,6 @@ $factory->define(App\Topic::class, function (Faker $faker) {
         'title' => $faker->name,
         'slug' => str_slug($faker->name, '-'),
         'description' => $faker->text(20),
-        'image' => str_slug($faker->name, '-') . '.jpg',
+        'image' => 'http://via.placeholder.com/400x600',
     ];
 });

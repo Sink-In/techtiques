@@ -7,7 +7,7 @@ $factory->define(App\News::class, function (Faker $faker) {
         'title' => $faker->name,
         'slug' => str_slug($faker->name, '-'),
         'description' => $faker->text(20),
-        'image' => str_slug($faker->name, '-') . '.jpg',
+        'image' => 'http://via.placeholder.com/400x600',
         'source' => str_slug($faker->name, '-'),
         'url' => str_slug($faker->name, '-')
     ];

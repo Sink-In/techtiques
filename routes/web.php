@@ -11,7 +11,5 @@
 |
 */
 
-Route::resource([
-    'news' => 'NewsController',
-    'topics' => 'TopicController'
-]);
+Route::resource('news', 'NewsController');
+Route::resource('topics', 'TopicController');

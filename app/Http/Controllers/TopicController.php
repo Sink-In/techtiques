@@ -14,7 +14,7 @@ class TopicController extends Controller
      */
     public function index()
     {
-        //
+        return Topic::orderBy('created_at', 'desc')->paginate(10);
     }
 
     /**
